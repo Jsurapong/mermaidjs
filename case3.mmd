@@ -1,7 +1,5 @@
 ---
 title: Hardware Installation
-config:
-  theme: base
 ---
 
 flowchart LR
@@ -42,22 +40,23 @@ flowchart LR
 
   subgraph meter_group[ ]
     subgraph digital[ ]
-    digital_meter_main(Digital power meter for Main Chiller)
-    digital_meter_main@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/digital_meter.png", h: 180, w: 50, pos: "b" }
-    
-    digital_meter_1(Digital power meter for Chiller No. 1)
-    digital_meter_1@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/digital_meter.png", h: 180, w: 50, pos: "b" }
-    
-    digital_meter_2(Digital power meter for Chiller No. 2)
-    digital_meter_2@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/digital_meter.png",h: 180, w: 50, pos: "b" }
-    
-    digital_meter_3(Digital power meter for Chiller No. 4)
-    digital_meter_3@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/digital_meter.png", h: 180, w: 50, pos: "b" }
-    
-    digital_meter_4(Digital power meter for Chiller No. 5)
-    digital_meter_4@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/digital_meter.png", h: 180, w: 50, pos: "b" }
-
+      digital_meter_main(Digital power meter for Main Chiller)
+      digital_meter_main@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/PowerMeter(PM2230).jpg", h: 180, w: 50, pos: "b" }
+      
+      digital_meter_1(Digital power meter for Chiller No. 1)
+      digital_meter_1@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/PowerMeter(PM2230).jpg", h: 180, w: 50, pos: "b" }
+      
+      digital_meter_2(Digital power meter for Chiller No. 2)
+      digital_meter_2@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/PowerMeter(PM2230).jpg",h: 180, w: 50, pos: "b" }
+      
+      digital_meter_3(Digital power meter for Chiller No. 4)
+      digital_meter_3@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/PowerMeter(PM2230).jpg", h: 180, w: 50, pos: "b" }
+      
+      digital_meter_4(Digital power meter for Chiller No. 5)
+      digital_meter_4@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/PowerMeter(PM2230).jpg", h: 180, w: 50, pos: "b" }
     end
+    
+  
 
     subgraph multi_circuit[ ]
     multi_circuit_meter_1(Multi-circuit Power Meter for\nPrimary Chilled Pump 1-4)
@@ -90,5 +89,3 @@ flowchart LR
   meter_group --> router
   sensor_group --> router
    
-
-
