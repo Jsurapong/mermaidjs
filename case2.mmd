@@ -1,0 +1,72 @@
+---
+title: Node with text
+---
+
+
+flowchart BT
+  root("`Digital platform`")
+  root@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/DigitalPlatform.jpg", h: 200, w: 300, pos: "b"}
+  
+  gateway(Industrial Gateway & Router No.1)
+  gateway@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/LoRaWAN]Gateway(UG65).jpg", h: 120, w: 50, pos: "b" }
+
+  subgraph room1["`ห้องคลังยา`"]
+
+    subgraph room_1_senser[ ]
+      room_1_sensor1("`Temperature Sensor & Probe 
+      ตู้แช่ยา RF1, RF2`")
+
+      room_1_sensor2("`Temperature Sensor & Probe 
+      ตู้แช่ยา RF3, RF4`")
+
+      room_1_sensor3("`Temperature Sensor & Probe 
+      ตู้แช่ยา RF5, RF6`")
+    end
+
+    subgraph room_1_iaq[ ]
+      room_1_iaq1("`2-in-1 IAQ
+      จุดที่ 1`")
+
+      room_1_iaq2("`2-in-1 IAQ
+      จุดที่ 2`")
+    end
+    
+  end
+
+  subgraph room2["`ห้องจ่ายยาใน`"]
+    subgraph room_2_senser[ ]
+      sensor1("`Temperature Sensor & Probe 
+      ตู้แช่ยา REF-064, REF-065`")
+
+      sensor2("`Temperature Sensor & Probe 
+      ตู้แช่ยา REF-020`")
+ 
+    end
+
+    subgraph room_2_iaq[ ]
+      iaq1("`2-in-1 IAQ
+      จุดที่ 1`")
+
+      iaq2("`2-in-1 IAQ
+      จุดที่ 2`")
+    end
+    
+  end
+
+
+  %% style
+  style room_1_senser  fill:transparent,stroke:transparent,stroke-width:4px
+  style room_1_iaq  fill:transparent,stroke:transparent,stroke-width:4px
+  style room1  fill:transparent,stroke:red,stroke-width:4px
+
+  style room_2_senser  fill:transparent,stroke:transparent,stroke-width:4px
+  style room_2_iaq  fill:transparent,stroke:transparent,stroke-width:4px
+  style room2  fill:transparent,stroke:red,stroke-width:4px
+
+
+  %% connection
+  gateway -. 4G .....->root
+  room1-. LoRaWan .....->gateway
+  room2-. LoRaWan .....->gateway
+  
+ 
