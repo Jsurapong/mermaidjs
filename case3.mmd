@@ -1,0 +1,94 @@
+---
+title: Hardware Installation
+config:
+  theme: base
+---
+
+flowchart LR
+  root("`Digital platform`")
+  root@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/DigitalPlatform.jpg", h: 200, w: 300, pos: "b"}
+  
+  router(Industrial Gateway & Router No.1)
+  router@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/RouterUR32.jpg", h: 120, w: 50, pos: "b" }
+
+  gateway_1(4G Cellular Gateway No. 1)
+  gateway_1@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/4GCellularGateway.jpg",h: 200, w: 200, pos: "b"}
+  
+  gateway_2(4G Cellular Gateway No. 2)
+  gateway_2@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/4GCellularGateway.jpg",h: 200, w: 200, pos: "b"}
+
+  transmitter_1(Pressure transmitter for AHU 12/1 Floor)
+  transmitter_1@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/transmitter.png", h: 140, w: 46, pos: "b" }
+  
+  transmitter_2(Pressure transmitter for AHU 12/2 Floor)
+  transmitter_2@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/transmitter.png",h: 140, w: 46, pos: "b" }
+
+  ultrasonic_flow_meter(Ultrasonic flow meter)
+  ultrasonic_flow_meter@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/UltrasonicFlowMeter.jpg", h: 200, w: 200, pos: "b"}
+
+  subgraph sensor_group[ ]
+    sensor_1(Strap-on Temp. sensor Chilled. supply)
+    sensor_1@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/Strap-onTempSensor.png",h: 140, w: 46, pos: "b" }
+    
+    sensor_2(Strap-on Temp. sensor Chilled. supply)
+    sensor_2@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/Strap-onTempSensor.png", h: 140, w: 46, pos: "b" }
+    
+    sensor_3(Strap-on Temp. sensor Chilled. supply)
+    sensor_3@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/Strap-onTempSensor.png", h: 140, w: 46, pos: "b" }
+    
+    sensor_4(Strap-on Temp. sensor Chilled. supply)
+    sensor_4@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/Strap-onTempSensor.png", h: 140, w: 46, pos: "b" }
+  end
+
+  subgraph meter_group[ ]
+    subgraph digital[ ]
+    digital_meter_main(Digital power meter for Main Chiller)
+    digital_meter_main@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/digital_meter.png", h: 180, w: 50, pos: "b" }
+    
+    digital_meter_1(Digital power meter for Chiller No. 1)
+    digital_meter_1@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/digital_meter.png", h: 180, w: 50, pos: "b" }
+    
+    digital_meter_2(Digital power meter for Chiller No. 2)
+    digital_meter_2@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/digital_meter.png",h: 180, w: 50, pos: "b" }
+    
+    digital_meter_3(Digital power meter for Chiller No. 4)
+    digital_meter_3@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/digital_meter.png", h: 180, w: 50, pos: "b" }
+    
+    digital_meter_4(Digital power meter for Chiller No. 5)
+    digital_meter_4@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/digital_meter.png", h: 180, w: 50, pos: "b" }
+
+    end
+
+    subgraph multi_circuit[ ]
+    multi_circuit_meter_1(Multi-circuit Power Meter for\nPrimary Chilled Pump 1-4)
+    multi_circuit_meter_1@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/Multi-Circuit-Power-Meter.jpg", h: 180, w: 50, pos: "b" }
+    
+    multi_circuit_meter_2(Multi-circuit Power Meter for\nPrimary Chilled Pump 5 and\nSecondary Chilled Pump 1-3)
+    multi_circuit_meter_2@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/Multi-Circuit-Power-Meter.jpg", h: 180, w: 50, pos: "b" }
+    
+    multi_circuit_meter_3(Multi-circuit Power Meter for\nSecondary Chilled Pump 4-5 and\nCondenser Pump 1-2)
+    multi_circuit_meter_3@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/Multi-Circuit-Power-Meter.jpg", h: 180, w: 50, pos: "b" }
+    
+    multi_circuit_meter_4(Multi-circuit Power Meter for\nCondenser Pump 3-5)
+    multi_circuit_meter_4@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/Multi-Circuit-Power-Meter.jpg", h: 180, w: 50, pos: "b" }
+    
+    multi_circuit_meter_5(Multi-circuit Power Meter for\nCooling Tower 1-4)
+    multi_circuit_meter_5@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/Multi-Circuit-Power-Meter.jpg", h: 180, w: 50, pos: "b" }
+    end
+  end
+
+  %% style
+  style meter_group  fill:transparent,stroke:transparent,stroke-width:4px
+  style sensor_group fill:transparent,stroke:transparent,stroke-width:4px
+  style multi_circuit fill:transparent,stroke:transparent,stroke-width:4px
+  style digital fill:transparent,stroke:transparent,stroke-width:4px
+
+  %% Connection paths
+  transmitter_1 --> gateway_1 --> root
+  transmitter_2 --> gateway_2 --> root
+  ultrasonic_flow_meter --> router --> root
+  meter_group --> router
+  sensor_group --> router
+   
+
+

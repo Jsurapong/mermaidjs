@@ -1,0 +1,41 @@
+---
+title: Node with text
+config:
+ layout: dagre
+ look: classic
+ theme: default
+---
+
+
+flowchart TD
+%%TB - Top to bottom
+%%TD - Top-down/ same as top to bottom
+%%BT - Bottom to top
+%%RL - Right to left
+%%LR - Left to right
+%%block
+   id1[block1]
+   id2([block2])
+   id3[[block3]]
+   id4[(block4)]
+   id5((block5))
+   id6>block6]
+   id7{block7}
+   id8[/block8/]
+   id9[\block9\]
+   id10[/block10\]
+   id11[\block11/]
+   id12((block12))
+   image[label]
+   image@{ img: "https://s3.ap-southeast-1.amazonaws.com/staging-asset.enres.co/diagram/DigitalPlatform.jpg", h: 200, w: 300, pos: "b"}
+
+%%connect
+   id1 -->|Yes| id2
+   id1 --x id2
+   id1 --o id---
+
+   id1 o--o id3
+   id7 x-->|Yes| id4
+   id7 x-->|No| id4
+
+
