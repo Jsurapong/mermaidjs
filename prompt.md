@@ -27,7 +27,7 @@
   - `(( ))` : วงกลม (Database)
   - `subgraph` : กลุ่มโหนด (ระบุ ID และชื่อของ subgraph)
 - **รูปภาพในโหนด (ไม่บังคับ)**:
-  - URL รูปภาพ (ต้องเป็น URL สาธารณะ)
+  - URL รูปภาพ (ต้องเป็น URL สาธารณะ) หรือ icon จากข้อ 6
   - ขนาดรูปภาพ (width, height) เช่น 40px, 50px
   - ตำแหน่งรูปภาพ (ด้านบน/ด้านล่าง/ซ้าย/ขวา)
 
@@ -54,20 +54,20 @@
 
 ### 6. รูป icon ที่ใช้ใน Diagram (ไม่บังคับ):
 
-- [2-in-1 IAQ.png]`<img src="https://lh3.googleusercontent.com/d/1sfh8Q8cVsnevj36_z5Vi2LzyG6AzoKs_"/>`
-- [4G Cellular Gateway.jpg]`<img src="https://lh3.googleusercontent.com/d/1tMGuQwKwVEz3MbB1r0Xn_tINfyYwbwbd"/>`
-- [Digital Platform.jpg]`<img src="https://lh3.googleusercontent.com/d/1V2jNvcfqKIgLaP5GbwQFjRQ8hGNJKdGw"/>`
-- [Digital Power Meter (PM2230).jpg]`<img src="https://lh3.googleusercontent.com/d/169YH6ziHB9lEM9Ue22wSrSEoZer_uSrY"/>`
-- [Industrial Gateway.jpg]`<img src="https://lh3.googleusercontent.com/d/1j_4Cu2ADAyFCBH4f2m2RNEvmA9O0Tpvu"/>`
-- [LoRaWAN Gateway (UG65).jpg]`<img src="https://lh3.googleusercontent.com/d/1iWh8eQa7K36F87tyx2Bg_ufyceBnNwv1"/>`
-- [Multi-Circuit Power Meter.jpg]`<img src="https://lh3.googleusercontent.com/d/1zi0NVyihRuFHCyKdj_MBZF_emIt6lZsT"/>`
-- [Pressure transmitter.jpg]`<img src="https://lh3.googleusercontent.com/d/1vTJOQodoRIAv5IbXZMmZ4mXI5WvCgG0k"/>`
-- [Remote (A-1019).jpg]`<img src="https://lh3.googleusercontent.com/d/1KPlLV4MFaep3gezNbgg9sn_LUkQBf_2i"/>`
-- [Router UR32.jpg]`<img src="https://lh3.googleusercontent.com/d/1X5w1q_DLHbUoXFPl62rdkksPBa9WPrkw"/>`
-- [Strap-on Temp. sensor.png]`<img src="https://lh3.googleusercontent.com/d/1qS1up3B4CO2YX1jnKNNRouJSGODUqGFp"/>`
-- [Temp Controller.png]`<img src="https://lh3.googleusercontent.com/d/1rOaIrql41V938OZIk9ZEUfdVb8k4Qbno"/>`
-- [Temperature Sensor Insert Type.jpg]`<img src="https://lh3.googleusercontent.com/d/1UGczGL-4sd0EeAy6dUneD39bmcPUN97J"/>`
-- [Ultrasonic Flow Meter.jpg]`<img src="https://lh3.googleusercontent.com/d/19E1jxNlbIkCh9CXk51hX_qWS7VGtqwCD"/>`
+- [2-in-1 IAQ]`<img src="https://lh3.googleusercontent.com/d/1sfh8Q8cVsnevj36_z5Vi2LzyG6AzoKs_"/>`
+- [4G Cellular Gateway]`<img src="https://lh3.googleusercontent.com/d/1tMGuQwKwVEz3MbB1r0Xn_tINfyYwbwbd"/>`
+- [Digital Platform]`<img src="https://lh3.googleusercontent.com/d/1V2jNvcfqKIgLaP5GbwQFjRQ8hGNJKdGw"/>`
+- [Digital Power Meter (PM2230)]`<img src="https://lh3.googleusercontent.com/d/169YH6ziHB9lEM9Ue22wSrSEoZer_uSrY"/>`
+- [Industrial Gateway]`<img src="https://lh3.googleusercontent.com/d/1j_4Cu2ADAyFCBH4f2m2RNEvmA9O0Tpvu"/>`
+- [LoRaWAN Gateway (UG65)]`<img src="https://lh3.googleusercontent.com/d/1iWh8eQa7K36F87tyx2Bg_ufyceBnNwv1"/>`
+- [Multi-Circuit Power Meter]`<img src="https://lh3.googleusercontent.com/d/1zi0NVyihRuFHCyKdj_MBZF_emIt6lZsT"/>`
+- [Pressure transmitter]`<img src="https://lh3.googleusercontent.com/d/1vTJOQodoRIAv5IbXZMmZ4mXI5WvCgG0k"/>`
+- [Remote (A-1019)]`<img src="https://lh3.googleusercontent.com/d/1KPlLV4MFaep3gezNbgg9sn_LUkQBf_2i"/>`
+- [Router UR32]`<img src="https://lh3.googleusercontent.com/d/1X5w1q_DLHbUoXFPl62rdkksPBa9WPrkw"/>`
+- [Strap-on Temp. sensor]`<img src="https://lh3.googleusercontent.com/d/1qS1up3B4CO2YX1jnKNNRouJSGODUqGFp"/>`
+- [Temp Controller]`<img src="https://lh3.googleusercontent.com/d/1rOaIrql41V938OZIk9ZEUfdVb8k4Qbno"/>`
+- [Temperature Sensor Insert Type]`<img src="https://lh3.googleusercontent.com/d/1UGczGL-4sd0EeAy6dUneD39bmcPUN97J"/>`
+- [Ultrasonic Flow Meter]`<img src="https://lh3.googleusercontent.com/d/19E1jxNlbIkCh9CXk51hX_qWS7VGtqwCD"/>`
 
 ### 7. กฏ
 
@@ -142,10 +142,10 @@ TD
 - ID: Start, ข้อความ: เริ่มต้น, ประเภท: ( )
 - ID: Sub1, ประเภท: subgraph, ข้อความ: "ส่วนเก็บข้อมูล"
 - ID: Sensor1, ข้อความ: เซนเซอร์อุณหภูมิ, ประเภท: [ ], รูปภาพ: 2-in-1 IAQ, ขนาด: 40px, ตำแหน่ง: ด้านบน
-- ID: Sensor2, ข้อความ: เซนเซอร์ความดัน, ประเภท: [ ], รูปภาพ: Pressure transmitter.jpg, ขนาด: 40px, ตำแหน่ง: ด้านบน
+- ID: Sensor2, ข้อความ: เซนเซอร์ความดัน, ประเภท: [ ], รูปภาพ: Pressure transmitter, ขนาด: 40px, ตำแหน่ง: ด้านบน
 - ID: Sub2, ประเภท: subgraph, ข้อความ: "ส่วนวิเคราะห์"
-- ID: Analyze, ข้อความ: วิเคราะห์ข้อมูล, ประเภท: { }, รูปภาพ: Digital Platform.jpg, ขนาด: 40px, ตำแหน่ง: ด้านล่าง
-- ID: Report, ข้อความ: สรุปรายงาน, ประเภท: [/\\], รูปภาพ: Router UR32.jpg, ขนาด: 40px, ตำแหน่ง: ซ้าย
+- ID: Analyze, ข้อความ: วิเคราะห์ข้อมูล, ประเภท: { }, รูปภาพ: Digital Platform, ขนาด: 40px, ตำแหน่ง: ด้านล่าง
+- ID: Report, ข้อความ: สรุปรายงาน, ประเภท: [/\\], รูปภาพ: Router UR32, ขนาด: 40px, ตำแหน่ง: ซ้าย
 - ID: End, ข้อความ: จบกระบวนการ, ประเภท: ( )
 
 ### Subgraphs:
