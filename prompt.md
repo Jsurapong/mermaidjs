@@ -54,8 +54,6 @@
 
 ### 6. รูป icon ที่ใช้ใน Diagram (ไม่บังคับ):
 
-_ใช้ url นี้เรียกจริงไม่ต้องแก้ไข url_
-
 - [2-in-1 IAQ.png]`<img src="https://lh3.googleusercontent.com/d/1sfh8Q8cVsnevj36_z5Vi2LzyG6AzoKs_"/>`
 - [4G Cellular Gateway.jpg]`<img src="https://lh3.googleusercontent.com/d/1tMGuQwKwVEz3MbB1r0Xn_tINfyYwbwbd"/>`
 - [Digital Platform.jpg]`<img src="https://lh3.googleusercontent.com/d/1V2jNvcfqKIgLaP5GbwQFjRQ8hGNJKdGw"/>`
@@ -73,7 +71,7 @@ _ใช้ url นี้เรียกจริงไม่ต้องแก�
 
 ### 7. กฏ
 
-- นำ tag รูปภาพไปใช้ห้ามแก้ไขเด็ดขาย
+- นำ tag รูปภาพไปใช้ห้ามแก้ไขเด็ดขาด
 
 ### 8. ตัวอย่างการใช้ Prompt:
 
